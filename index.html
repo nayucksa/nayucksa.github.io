@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>미현의 홈페이지</title>
+    <title>Minimalist Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>안녕하세요!</h1>
-            <p>이곳은 저의 작업물과 이야기를 담는 공간입니다.</p>
-        </div>
+    <nav class="navbar container">
+        <div class="logo">[Your Name]</div>
+        <button id="theme-toggle" aria-label="다크 모드 전환">
+            <span class="icon">🌙</span> </button>
+    </nav>
+
+    <header class="hero container">
+        <h1 class="hero-title">Hello, I'm <span class="highlight">송미현</span>.</h1>
+        <p class="hero-subtitle">
+            부제목
+            부제목
+        </p>
     </header>
 
-    <main class="container">
+    <main class="container content-section">
         <section class="about">
-            <h2>자기 소개</h2>
+            <h2>About Me</h2>
             <p>
-                간단한 자기소개를 작성하는 공간입니다. 어떤 분야에 관심이 있는지, 
-                어떤 공부를 하고 있는지 방문자들에게 알려주세요.
+                자기소개
             </p>
         </section>
 
-        <section class="links">
-            <h2>관련 링크</h2>
-            <ul>
-                <li><a href="https://blog.naver.com/thdalgus06">블로그 바로가기</a></li>
-                <li><a href="@full_hd.1920x1080">인스타그램</a></li>
-                <li><a href="nayucksa@gmail.com">이메일 보내기</a></li>
-            </ul>
+        <section class="projects">
+            <h2>Recent Works</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>프로젝트 A</h3>
+                    <p>프로젝트에 대한 한 줄 설명입니다.</p>
+                    <a href="#" class="link-text">자세히 보기 &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>프로젝트 B</h3>
+                    <p>간결하고 명확한 설명을 지향합니다.</p>
+                    <a href="#" class="link-text">자세히 보기 &rarr;</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 송미현. All rights reserved.</p>
+    <footer class="container">
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="mailto:your@email.com">Email</a>
+            <a href="#">LinkedIn</a>
         </div>
+        <p class="copyright">&copy; 2025 [Your Name]. Design by Essential.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
